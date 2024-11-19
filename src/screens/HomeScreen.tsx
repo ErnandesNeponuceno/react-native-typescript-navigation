@@ -9,9 +9,6 @@ export default function HomeScreen({navigation}: any){
 
     return (
         <View style={styles.container}>
-            <Text>
-                Home Works!
-            </Text>
             <Button
                 title='Ir para Galeria'
                 onPress={navToGallery}
@@ -23,6 +20,8 @@ export default function HomeScreen({navigation}: any){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: 'blue'
+        backgroundColor: '#f0f0f0',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })

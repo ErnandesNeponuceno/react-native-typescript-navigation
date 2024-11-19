@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar'
-import {View, Text, StyleSheet, Button} from 'react-native'
+import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native'
 
 export default function GalleryScreen({navigation}: any){
     function navToHome() {
@@ -8,13 +8,10 @@ export default function GalleryScreen({navigation}: any){
 
     return (
         <View style={styles.container}>
-            <Text>
-                Gallery Works!
-            </Text>
             <Button
-                title='Ir para Home'
+                title='Voltar para a Home'
                 onPress={navToHome}
-            />
+            /> 
         </View>
     )
 }
@@ -22,6 +19,8 @@ export default function GalleryScreen({navigation}: any){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: 'red',
+        backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
 })
